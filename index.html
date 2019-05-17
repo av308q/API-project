@@ -1,19 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rick N Morty API</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link href="" rel="stylesheet">
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <a href="https://fontmeme.com/fonts/get-schwifty-font/"><img src="https://fontmeme.com/permalink/190517/972093e88d22d5d763cd968cbf423119.png" alt="get-schwifty-font" border="0"></a>
 </head>
-    
 <body>
-    <main>
-
-    </main>
-    
+    <div class="wrapper">
+        <h1></h1>
+        <button id="getMoreQuotes">Print List</button>
+        <ul id="chuckQuotes">
+            <li>Rick N Morty chararter list</li>
+            <li id="chuckSays">&nbsp;</li>
+        </ul>
+    </div>
+    <script src="./scripts/get.js"></script>
+    <script src="./scripts/main.js"></script>
+    <script>
+        updateChuckSays();
+    </script>
 </body>
 </html>
