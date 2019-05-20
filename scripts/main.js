@@ -3,11 +3,11 @@
 const getMoreQuotesButton = document.getElementById('getMoreQuotes');
 getMoreQuotesButton.addEventListener('click', function(e){
     e.preventDefault();
-    updateChuckSays();
+    updateCharacterList();
 });
 
-function updateChuckSays() {
-    const chuckSays = document.getElementById('chuckSays');
+function updateCharacterList() {
+    const characterList = document.getElementById('characterList');
 
     get('https://rickandmortyapi.com/api/character')
     .then((response) => {
@@ -27,7 +27,7 @@ function updateChuckSays() {
             locationLink.setAttribute('href',character.location.url);
             locationLink.textContent = character.name;
             characterItem.append(locationLink);
-            chuckSays.append(characterItem);
+            characterList.append(characterItem);
 
 
         })
