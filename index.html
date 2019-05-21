@@ -1,156 +1,131 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Rick and Morty</title>
-    <link rel="stylesheet" href="./css/style.css">
-    
-</head>
-<body>
-    <div class="wrapper">
-        <h1></h1>
-        <button id="getCharacters">Print List</button>
-        <ul id="getCharacters">
-            <h1>Rick N Morty chararter list</h1>
-            <li id="eachCharacter">&nbsp;</li>
-        </ul>
-    </div>
-    <script src="./scripts/get.js"></script>
-    <script src="./scripts/main.js"></script>
-    <script>
-        getCharacter();
-    </script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 
 
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://fonts.google.com/">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="/w3css/3/w3.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rick and Morty</title>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="https://fonts.google.com/">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="queris.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Rick and Morty</title>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="w3-bar w3-black">
-        <a href="#home" class="w3-button w3-bar-item">Home</a>
-        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
-    </nav>
-    <!-- <audio src="Rick.mp3" controls></audio> -->
-    <!-- <div class="box"> -->
-        <!-- <img src="" alt="" class="box-img"> -->
-        <h1>Rick and Morty</h1>
+       <!-- NOTE: Button text should be a verb/command -->
+   <header>
+       <!-- Navigation -->
+       <nav>
+           <div class="row">
+               <img src="images/jordan.png" alt="Rick and Morty" class="logo">
 
-        <!-- NOTE: Button text should be a verb/command -->
-    <header>
-        <button id="getCharacters">Show Characters</button>
-        <section id="characterSection">
-            <ul id="characterList">
-                <!-- Append the character items here... -->
-            </ul>
-        </section>
-    </header>
+           </div>
+       </nav>
+       <!-- <audio src="Rick.mp3" controls></audio> -->
+       <!-- <div class="box"> -->
+       <!-- <img src="" alt="" class="box-img"> -->
+       <h1>Rick and Morty</h1>
+   </header>
 
-        <section class="section-form">
-            <div class="row">
-                <h2>We're happy to hear from you</h2>
-            </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Name</label>
-                        </div>
-                        <div class="col span-2-of-3"></div>
-                            <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Email</label>
-                        </div>
-                        <div class="col span-2-of-3"></div>
-                        <input type="Email" name="Email" id="Email" placeholder="Your email" required>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>How did you find us?</label>
-                        </div>
-                        <div class="col span-2-of-3"></div>
-                            <select name="find-us" id="find-us">
-                                <option value="friends">Friends</option>
-                                <option value="Search">Search engine</option>
-                                <option value="other">Other</option>
-                            </select>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Newsletter?</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                        <input type="checkbox" name="news" id="news" check> Yes, please
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>Leave us a comment!</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea type="message" placeholder="Your message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <!-- Leave a space between-->
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
-            </div>
+       <div class="box">
+           <h2>About the show</h2>
+           <p>An animated series on adult-swim about the infinite adventures of Rick, a genius alcoholic and careless scientist, with
+           his grandson Morty, a 14 year-old anxious boy who is not so smart. Together, they explore the infinite universes;
+           causing mayhem and running into trouble.</p>
+           <button id="produceList">Show Characters</button>
+           <div id="characterSection">
+           <ul id="characterList">
+               <!-- Append the character items here... -->
+           </ul>
+       </div>
+fonts.google.com
+Google Fonts
+Making the web more beautiful, fast, and open through great typography
+https://www.gstatic.com/images/icons/material/apps/fonts/1x/opengraph_color_1200dp.png
+<!-- //////////////////////////////////////////////////////// -->
+       <!-- Non working contact form-->
 
-        </section>
+       <section class="section-form">
+           <div class="row">
+               <h2>We'd love to hear from you.</h2>
+           </div>
+           <div class="row">
+               <form method="post" action="#" class="contact-form">
+                   <div class="row">
+                       <div class="col span-1-of-3">
+                           <label>Name</label>
+                       </div>
+                       <div class="col span-2-of-3"></div>
+                           <input type="text" name="name" id="name" placeholder="Your name" required>
+                   </div>
+                   <div class="row">
+                       <div class="col span-1-of-3">
+                           <label>Email</label>
+                       </div>
+                       <div class="col span-2-of-3"></div>
+                       <input type="Email" name="Email" id="Email" placeholder="Your email" required>
+                   </div>
+                   <div class="row">
+                       <div class="col span-1-of-3">
+                           <label>How did you find us?</label>
+                       </div>
+                       <div class="col span-2-of-3"></div>
+                           <select name="find-us" id="find-us">
+                               <option value="friends">Friends</option>
+                               <option value="Search">Search engine</option>
+                               <option value="other">Other</option>
+                           </select>
+                   </div>
+                   <div class="row">
+                       <div class="col span-1-of-3">
+                           <label>Newsletter?</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                       <input type="checkbox" name="news" id="news" check> Yes, please
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col span-1-of-3">
+                           <label>Leave us a comment!</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                           <textarea type="message" placeholder="Your message"></textarea>
+                       </div>
+                   </div>
+                   <div class="row">
+                       <div class="col span-1-of-3">
+                           <!-- Leave a space between-->
+                           <label>&nbsp;</label>
+                       </div>
+                       <div class="col span-2-of-3">
+                           <input type="submit" value="Send it!">
+                       </div>
+                   </div>
+               </form>
+           </div>
 
-        <footer>
-            <div class="row">
-                <div class="col span-1-of-2">
-                    <ul class="footer-nav">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col span-1-of-2">
-                    <ul class="scoial-links">
-                        <li><a href="#"><i class=:ion-social-facebook"></i></a></li>
-                        <li><a href="#"><i class=:ion-social-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <p>
-                    Copyright &copy; 2019 by AandT. All rights reserved.
-                </p>
-            </div>
+       </section>
+<!-- ////////////////////////////////FOOTERRRRRR///////////////// -->
+       <footer>
+           <div class="row">
+               <div class="col span-1-of-2">
+
+               </div>
+           </div>
+           <div class="row">
+               <p>
+                   Made by Angel and Thomas.
+               </p>
+           </div>
 
 
-        </footer>
-        
-    <!-- </div> -->
-    <script src="./scripts/get.js"></script>
-    <script src="./scripts/main.js"></script>
+       </footer>
+
+   <!-- </div> -->
+   <script src="./scripts/get.js"></script>
+<script src="./scripts/main.js"></script>
 </body>
 
 </html>
-
-
-
 
