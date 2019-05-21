@@ -1,59 +1,156 @@
-* {
+/* body{
+    margin: 100px;
+    padding: 100px;
+    background: url(http://lightfarm.com/wp-content/uploads/2017/08/Rick-Morty_1920.jpg) no-repeat;
+    background-size: contain;
+} */
+*{
+    margin: 100;
+    padding: 100;
     box-sizing: border-box;
+ }
+ html {
+    background-color: rgb(14, 10, 10);
+    color: rgb(241, 235, 235);
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+ }
+ .row {
+    max-width: 1140px
+ }
+ header {
+    background-image: url(http://lightfarm.com/wp-content/uploads/2017/08/Rick-Morty_1920.jpg);
+    background-size: cover;
+    background-position: contain;
+    height: 100vh;
+ }
+ 
+ 
+
+
+
+button{
+    padding: 10px;
+    border: 0px;
+    background: #000000;
+    color: rgb(43, 76, 208);
+    font-size: 20px;
+    cursor: pointer;
 }
 
-html {
-    font-size: 16px;
+button:hover{
+    background: #020304;
 }
 
-body {
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
+ul{
+    list-style: none;
 }
 
-p {margin-bottom: 1.25em;}
+/* .box{
+    width: 550px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.box h1{
+    font-size: 40px;
+    font-family: Stylish;
+    letter-spacing: 4px;
+    font-weight: 100;
+}
+.box p{
+    text-align: justify;
+} */
 
-h1, h2, h3, h4, h5 {
-    margin: 2.75rem 0 1rem;
-    font-weight: 400;
-    line-height: 1.15;
+
+/*
+////////FORM
+*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
 }
 
-h1 {
-    margin-top: 0;
-    font-size: 3.052rem;
-}
-
-h2 { 
-    font-size: 2.441rem; 
-}
-
-h3 { 
-    font-size: 1.953rem; 
-}
-
-h4 { 
-    font-size: 1.563rem; 
-}
-
-h5 { 
-    font-size: 1.25rem; 
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 1rem auto 0;
-    max-width: 1024px;
+input[type=text],
+input[type=email],
+select,
+textarea {
     width: 100%;
+    padding: 7px;
+    border: 1px solid rgb(12, 9, 9);
+    cursor: pointer;
+}
+textarea {
+    height: 100px; 
+}
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
 }
 
-button {
-    font-size: 1rem;
-    margin: 1rem auto 0;
-    max-width: 400px;
-    padding: 1rem;
-    text-transform: uppercase;
+
+*:focus {outline: none;}
+
+
+/*
+//////////////////////FOOTER
+*/
+
+footer {
+    background-color: rgb(19, 8, 8);
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.scoial-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: rgb(12, 3, 3);
+};
+
+#characterList li{
+    text-shadow: 1px 1px 2px black;
+    color: rgb(26, 17, 17);
+}
+
+#characterList a{
+    
+    color: rgba(233, 19, 15, 0.652);
+    font-weight: bold;
+
+}
+
+p {
+    color: rgb(219, 63, 63)
+    
+
 }
